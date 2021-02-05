@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="DataController.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <style>
+        body {
+            background: url(Images/BG.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .custom-card{
+            border: none;
+            border-radius: 25px;
+            background-color: whitesmoke;
+        }
+
+        h5{
+            color: steelblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-10 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="search-input" type="text" class="form-control" placeholder="Enter a valid location for Weather ...">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="text-center" id="status-panel" style="display: none;">
+           
+            <div class="card col-md-10 m-auto py-5 custom-card" style="height: 700px;">
+                <div class="card-body" id="info-container">
+                  <h2 class="card-title" style="color: salmon;">Email Validation For</h2>
+                  <h6 class="card-subtitle mb-2 text-muted">me.ashik.personal@gmail.com</h6>
+                  <br>  
+                  
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
+</html>
