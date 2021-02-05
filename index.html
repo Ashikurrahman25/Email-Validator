@@ -35,19 +35,22 @@
     <div class="container">
         <form class="col-md-10 m-auto py-5">
             <div class="input-group mb-3">
-                <input id="search-input" type="text" class="form-control" placeholder="Enter a valid location for Weather ...">
+                <input id="search-input" type="text" class="form-control" placeholder="Enter an email to validate...">
                 <div class="input-group-append">
-                    <button type="button" class="btn btn-primary">Search</button>
+                    <button onclick = "validateEmail(document.getElementById('search-input').value)"  type="button" class="btn btn-primary">Validate</button>
                 </div>
             </div>
         </form>
         <div class="text-center" id="status-panel" style="display: none;">
            
-            <div class="card col-md-10 m-auto py-5 custom-card" style="height: 700px;">
-                <div class="card-body" id="info-container">
+            <div class="card col-md-10 m-auto py-5 custom-card" style="height: 420px;">
+                <div class="card-body">
                   <h2 class="card-title" style="color: salmon;">Email Validation For</h2>
-                  <h6 class="card-subtitle mb-2 text-muted">me.ashik.personal@gmail.com</h6>
+                  <h6 class="card-subtitle mb-2 text-muted" id="mail">me.personal@gmail.com</h6>
                   <br>  
+                  <div id="info-container">
+
+                  </div>
                   
                 </div>
               </div>
